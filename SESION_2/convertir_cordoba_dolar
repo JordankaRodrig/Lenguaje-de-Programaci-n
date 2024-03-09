@@ -1,0 +1,28 @@
+#convertir de cordoba a dolar o dolar a cordoba
+# print ("Bienvenido")
+# print("Dime tu nombre:")
+# name= input()
+# print ("Hola", name)
+# print("Dime la cantidad en cordoba")
+# cantidad_cordoba= float(input())
+# print("cantidad en c$:", cantidad_cordoba)
+# print("cantidad en u$:", cantidad_cordoba/36.62)
+
+
+#uso de funciones
+#calcular la edad de una persona teniendo el año de nacimiento
+#decir si es mayor o menor de edad
+def calcEdad(añoNac):
+    return 2024 - añoNac
+
+def evalEdad(edad):
+    if edad >=18:
+        return "Es mayor de edad"
+    else: 
+        return "Es menor de edad"
+    
+def main():
+    nacimiento= eval(input("Ingrese la fecha de nacimiento "))
+    print("Tu edad es", calcEdad(nacimiento), "y eres", evalEdad(calcEdad(nacimiento)))
+
+main()
